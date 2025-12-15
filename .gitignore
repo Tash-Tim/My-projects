@@ -1,0 +1,6 @@
+.idea/
+!/.venv/
+.vscode/
+Trash-Detection-10/
+Черновики/
+runs/

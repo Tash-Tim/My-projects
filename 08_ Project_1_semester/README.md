@@ -48,10 +48,10 @@ __Определение (детекция):__
     - оптимизатор: AdamW
 4. Проверка
     - в наличие 3 весов (лучшие чекпоинты) после обучения: 
-        - `best_yolo8n_ep_80_batch_16.pt`
-        - `best_yolo8s_ep_100_batch_16.pt`
-        - `best_yolo8s_ep_110_batch_8.pt`
-    - модель проверяется на тестовом наборе данных из папки `data`
+        - [`best_yolo8n_ep_80_batch_16.pt`](https://github.com/Tash-Tim/My-projects/blob/main/08_%20Project_1_semester/best_yolo8n_ep_80_batch_16.pt)
+        - [`best_yolo8s_ep_100_batch_16.pt`](https://github.com/Tash-Tim/My-projects/blob/main/08_%20Project_1_semester/best_yolo8s_ep_100_batch_16.pt)
+        - [`best_yolo8s_ep_110_batch_8.pt`](https://github.com/Tash-Tim/My-projects/blob/main/08_%20Project_1_semester/best_yolo8s_ep_110_batch_8.pt)
+    - модель проверяется на тестовом наборе данных из папки [`data`](https://github.com/Tash-Tim/My-projects/tree/main/08_%20Project_1_semester/data)
 5. Оценка
     - оценка дообученной модели проводилась на тестовой выборке из dataset
     - использовались 4 метрики оценки: `mAP@0.5`, `mAP@0.5:0.95`, `Precision`, `Recall`,
@@ -80,7 +80,7 @@ __Определение (детекция):__
     - классов 6: картонных коробок, стекла, металла, бумаги, пластмассы, органических отходов
     - тренировочный набор 5630 изображений, валидационный набор 873 изображения, тестовый набор 1007 изображений
 
-3. В ходе экспериментов и проверок были выбраны веса (лучший чекпоинт)`best_yolo8s_ep_110_batch_8.pt` и конфигурация порамента conf=0.15. Модель показала себя приемлемой с умеренными оценками. 
+3. В ходе экспериментов и проверок были выбраны веса (лучший чекпоинт) [`best_yolo8s_ep_110_batch_8.pt`](https://github.com/Tash-Tim/My-projects/blob/main/08_%20Project_1_semester/best_yolo8s_ep_110_batch_8.pt) и конфигурация порамента conf=0.15. Модель показала себя приемлемой с умеренными оценками. 
     - mAP@0.5 (Mean Average Precision, IoU = 0.5) - показывает, насколько хорошо модель находит и классифицирует объекты;
         - __mAP@0.5 = 0.60 - Хорошо определяет объекты, допускается умеренная погрешность.__
     - mAP@0.5:0.95 (COCO mAP) - оценивает точность локализации;
